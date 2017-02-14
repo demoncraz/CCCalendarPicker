@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D4BF1A01E532702007B0F59 /* CCDotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BF19F1E532702007B0F59 /* CCDotItem.m */; };
+		3D4BF1A31E5333A1007B0F59 /* up_arror.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BF1A21E5333A1007B0F59 /* up_arror.png */; };
+		3D4BF1AD1E5342C8007B0F59 /* CCCalenderDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BF1A61E5342C8007B0F59 /* CCCalenderDateView.m */; };
+		3D4BF1AE1E5342C8007B0F59 /* CCCalenderItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BF1A81E5342C8007B0F59 /* CCCalenderItemView.m */; };
+		3D4BF1AF1E5342C8007B0F59 /* CCCalenderItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BF1A91E5342C8007B0F59 /* CCCalenderItemView.xib */; };
+		3D4BF1B01E5342C8007B0F59 /* CCCalerderPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BF1AB1E5342C8007B0F59 /* CCCalerderPickerView.m */; };
+		3D4BF1B11E5342C9007B0F59 /* CCCalerderPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4BF1AC1E5342C8007B0F59 /* CCCalerderPickerView.xib */; };
+		3D5243861E516A3A005109D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5243851E516A3A005109D9 /* main.m */; };
+		3D5243891E516A3A005109D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5243881E516A3A005109D9 /* AppDelegate.m */; };
+		3D52438C1E516A3A005109D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D52438B1E516A3A005109D9 /* ViewController.m */; };
+		3D52438F1E516A3A005109D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D52438D1E516A3A005109D9 /* Main.storyboard */; };
+		3D5243911E516A3A005109D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5243901E516A3A005109D9 /* Assets.xcassets */; };
+		3D5243941E516A3A005109D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5243921E516A3A005109D9 /* LaunchScreen.storyboard */; };
+		3D89B9501E51E64000A4CD34 /* CCDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D89B94F1E51E64000A4CD34 /* CCDateTool.m */; };
+		3D89B9541E51ED5500A4CD34 /* NSDate+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D89B9531E51ED5500A4CD34 /* NSDate+Date.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D4BF19E1E532702007B0F59 /* CCDotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDotItem.h; sourceTree = "<group>"; };
+		3D4BF19F1E532702007B0F59 /* CCDotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDotItem.m; sourceTree = "<group>"; };
+		3D4BF1A21E5333A1007B0F59 /* up_arror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arror.png; sourceTree = "<group>"; };
+		3D4BF1A51E5342C8007B0F59 /* CCCalenderDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCalenderDateView.h; sourceTree = "<group>"; };
+		3D4BF1A61E5342C8007B0F59 /* CCCalenderDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCalenderDateView.m; sourceTree = "<group>"; };
+		3D4BF1A71E5342C8007B0F59 /* CCCalenderItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCalenderItemView.h; sourceTree = "<group>"; };
+		3D4BF1A81E5342C8007B0F59 /* CCCalenderItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCalenderItemView.m; sourceTree = "<group>"; };
+		3D4BF1A91E5342C8007B0F59 /* CCCalenderItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCCalenderItemView.xib; sourceTree = "<group>"; };
+		3D4BF1AA1E5342C8007B0F59 /* CCCalerderPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCalerderPickerView.h; sourceTree = "<group>"; };
+		3D4BF1AB1E5342C8007B0F59 /* CCCalerderPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCalerderPickerView.m; sourceTree = "<group>"; };
+		3D4BF1AC1E5342C8007B0F59 /* CCCalerderPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCCalerderPickerView.xib; sourceTree = "<group>"; };
+		3D5243811E516A3A005109D9 /* CCCalenderPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCCalenderPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5243851E516A3A005109D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D5243871E516A3A005109D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D5243881E516A3A005109D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D52438A1E516A3A005109D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D52438B1E516A3A005109D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D52438E1E516A3A005109D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D5243901E516A3A005109D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D5243931E516A3A005109D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D5243951E516A3A005109D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D89B94E1E51E64000A4CD34 /* CCDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDateTool.h; sourceTree = "<group>"; };
+		3D89B94F1E51E64000A4CD34 /* CCDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDateTool.m; sourceTree = "<group>"; };
+		3D89B9521E51ED5500A4CD34 /* NSDate+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Date.h"; sourceTree = "<group>"; };
+		3D89B9531E51ED5500A4CD34 /* NSDate+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Date.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D52437E1E516A3A005109D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D4BF1911E52FBDD007B0F59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BF1A11E533396007B0F59 /* Images */,
+				3D4BF19E1E532702007B0F59 /* CCDotItem.h */,
+				3D4BF19F1E532702007B0F59 /* CCDotItem.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D4BF1A11E533396007B0F59 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BF1A21E5333A1007B0F59 /* up_arror.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3D4BF1A41E5342C8007B0F59 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BF1AA1E5342C8007B0F59 /* CCCalerderPickerView.h */,
+				3D4BF1AB1E5342C8007B0F59 /* CCCalerderPickerView.m */,
+				3D4BF1AC1E5342C8007B0F59 /* CCCalerderPickerView.xib */,
+				3D4BF1A51E5342C8007B0F59 /* CCCalenderDateView.h */,
+				3D4BF1A61E5342C8007B0F59 /* CCCalenderDateView.m */,
+				3D4BF1A71E5342C8007B0F59 /* CCCalenderItemView.h */,
+				3D4BF1A81E5342C8007B0F59 /* CCCalenderItemView.m */,
+				3D4BF1A91E5342C8007B0F59 /* CCCalenderItemView.xib */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		3D5243781E516A3A005109D9 = {
+			isa = PBXGroup;
+			children = (
+				3D5243831E516A3A005109D9 /* CCCalenderPicker */,
+				3D5243821E516A3A005109D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D5243821E516A3A005109D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D5243811E516A3A005109D9 /* CCCalenderPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D5243831E516A3A005109D9 /* CCCalenderPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3D52439B1E516AAA005109D9 /* CCCalerderPickerView */,
+				3D5243871E516A3A005109D9 /* AppDelegate.h */,
+				3D5243881E516A3A005109D9 /* AppDelegate.m */,
+				3D52438A1E516A3A005109D9 /* ViewController.h */,
+				3D52438B1E516A3A005109D9 /* ViewController.m */,
+				3D52438D1E516A3A005109D9 /* Main.storyboard */,
+				3D5243901E516A3A005109D9 /* Assets.xcassets */,
+				3D5243921E516A3A005109D9 /* LaunchScreen.storyboard */,
+				3D5243951E516A3A005109D9 /* Info.plist */,
+				3D5243841E516A3A005109D9 /* Supporting Files */,
+			);
+			path = CCCalenderPicker;
+			sourceTree = "<group>";
+		};
+		3D5243841E516A3A005109D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D5243851E516A3A005109D9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D52439B1E516AAA005109D9 /* CCCalerderPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				3D4BF1A41E5342C8007B0F59 /* MainViews */,
+				3D4BF1911E52FBDD007B0F59 /* Supporting Files */,
+				3D89B9511E51ED4800A4CD34 /* Category */,
+				3D89B94D1E51E62D00A4CD34 /* DateTool */,
+			);
+			path = CCCalerderPickerView;
+			sourceTree = "<group>";
+		};
+		3D89B94D1E51E62D00A4CD34 /* DateTool */ = {
+			isa = PBXGroup;
+			children = (
+				3D89B94E1E51E64000A4CD34 /* CCDateTool.h */,
+				3D89B94F1E51E64000A4CD34 /* CCDateTool.m */,
+			);
+			path = DateTool;
+			sourceTree = "<group>";
+		};
+		3D89B9511E51ED4800A4CD34 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3D89B9521E51ED5500A4CD34 /* NSDate+Date.h */,
+				3D89B9531E51ED5500A4CD34 /* NSDate+Date.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D5243801E516A3A005109D9 /* CCCalenderPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D5243981E516A3A005109D9 /* Build configuration list for PBXNativeTarget "CCCalenderPicker" */;
+			buildPhases = (
+				3D52437D1E516A3A005109D9 /* Sources */,
+				3D52437E1E516A3A005109D9 /* Frameworks */,
+				3D52437F1E516A3A005109D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCCalenderPicker;
+			productName = CCCalenderPicker;
+			productReference = 3D5243811E516A3A005109D9 /* CCCalenderPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D5243791E516A3A005109D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = demoncraz;
+				TargetAttributes = {
+					3D5243801E516A3A005109D9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D52437C1E516A3A005109D9 /* Build configuration list for PBXProject "CCCalenderPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D5243781E516A3A005109D9;
+			productRefGroup = 3D5243821E516A3A005109D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D5243801E516A3A005109D9 /* CCCalenderPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D52437F1E516A3A005109D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5243941E516A3A005109D9 /* LaunchScreen.storyboard in Resources */,
+				3D4BF1AF1E5342C8007B0F59 /* CCCalenderItemView.xib in Resources */,
+				3D4BF1B11E5342C9007B0F59 /* CCCalerderPickerView.xib in Resources */,
+				3D5243911E516A3A005109D9 /* Assets.xcassets in Resources */,
+				3D4BF1A31E5333A1007B0F59 /* up_arror.png in Resources */,
+				3D52438F1E516A3A005109D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D52437D1E516A3A005109D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4BF1B01E5342C8007B0F59 /* CCCalerderPickerView.m in Sources */,
+				3D89B9541E51ED5500A4CD34 /* NSDate+Date.m in Sources */,
+				3D4BF1A01E532702007B0F59 /* CCDotItem.m in Sources */,
+				3D52438C1E516A3A005109D9 /* ViewController.m in Sources */,
+				3D89B9501E51E64000A4CD34 /* CCDateTool.m in Sources */,
+				3D4BF1AD1E5342C8007B0F59 /* CCCalenderDateView.m in Sources */,
+				3D4BF1AE1E5342C8007B0F59 /* CCCalenderItemView.m in Sources */,
+				3D5243891E516A3A005109D9 /* AppDelegate.m in Sources */,
+				3D5243861E516A3A005109D9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D52438D1E516A3A005109D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D52438E1E516A3A005109D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D5243921E516A3A005109D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D5243931E516A3A005109D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D5243961E516A3A005109D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D5243971E516A3A005109D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D5243991E516A3A005109D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CCCalenderPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.steve.CCCalenderPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D52439A1E516A3A005109D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CCCalenderPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.steve.CCCalenderPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D52437C1E516A3A005109D9 /* Build configuration list for PBXProject "CCCalenderPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5243961E516A3A005109D9 /* Debug */,
+				3D5243971E516A3A005109D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D5243981E516A3A005109D9 /* Build configuration list for PBXNativeTarget "CCCalenderPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D5243991E516A3A005109D9 /* Debug */,
+				3D52439A1E516A3A005109D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D5243791E516A3A005109D9 /* Project object */;
+}
