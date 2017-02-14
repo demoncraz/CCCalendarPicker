@@ -107,7 +107,7 @@
                                 <color key="titleColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <action selector="lastMonthClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="oEF-NT-My9"/>
+                                <action selector="lastMonthClick" destination="iN0-l3-epB" eventType="touchUpInside" id="Me3-ne-4Fo"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orF-5N-9vs">
@@ -117,7 +117,7 @@
                                 <color key="titleColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <action selector="nextMonthClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="42K-Sw-gQ9"/>
+                                <action selector="nextMonthClick" destination="iN0-l3-epB" eventType="touchUpInside" id="2rV-m8-0LD"/>
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="up_arror.png" translatesAutoresizingMaskIntoConstraints="NO" id="JvE-Yu-ibO">
@@ -137,7 +137,7 @@
                                 <color key="titleColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <action selector="monthButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="w7e-LP-Fwi"/>
+                                <action selector="monthButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="uFH-wi-Hhl"/>
                             </connections>
                         </button>
                     </subviews>

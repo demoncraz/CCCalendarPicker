@@ -27,7 +27,7 @@ static NSString * const cellId = @"cell";
 
 static CCCalerderPickerView *sharedCalenderPickView;
 
-@interface CCCalerderPickerView ()
+@interface CCCalerderPickerView ()<CCCalendarDateViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *monthButton;
 
@@ -123,6 +123,7 @@ static CCCalerderPickerView *sharedCalenderPickView;
     _dateView = [[CCCalenderDateView alloc] initWithFrame:CGRectMake(0, 89, [UIScreen mainScreen].bounds.size.width, 275) collectionViewLayout:layout];
     _dateView.yearMonth = self.currentYearMonth;
     [self addSubview:_dateView];
+    _dateView.swipeDelegate = self;
     
     
 }
@@ -131,6 +132,9 @@ static CCCalerderPickerView *sharedCalenderPickView;
     
     //先从缓存池中取
     CCCalenderDateView *dateView = [self.reusableDateViews lastObject];
+    if (!dateView.swipeDelegate) {
+        dateView.swipeDelegate = self;
+    }
     if (dateView == nil) {//如果没取到，就创建
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width / 7.0, CCCalenderItemHeight);
@@ -149,7 +153,7 @@ static CCCalerderPickerView *sharedCalenderPickView;
 
 #pragma mark - 上一个月按钮点击
 
-- (IBAction)lastMonthClick:(id)sender {
+- (IBAction)lastMonthClick {
     if (self.dateView.frame.origin.x != 0) {//如果还在切换中，不响应点击
         return;
     }
@@ -167,7 +171,7 @@ static CCCalerderPickerView *sharedCalenderPickView;
 
 }
 
-- (IBAction)nextMonthClick:(id)sender {
+- (IBAction)nextMonthClick {
     if (self.dateView.frame.origin.x != 0) {//如果还在切换中，不响应点击
         return;
     }
@@ -245,6 +249,7 @@ static CCCalerderPickerView *sharedCalenderPickView;
 
 #pragma mark - dismiss
 - (void)dismiss {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"CCCalendarDismissNotification" object:nil];
     
     [UIView animateWithDuration:CCDefaultShowAnomationDuration delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         CGRect frame = self.frame;
@@ -256,8 +261,14 @@ static CCCalerderPickerView *sharedCalenderPickView;
     
 }
 
--(void)dealloc {
-    NSLog(@"%s", __func__);
+#pragma mark - CCCalendarDateViewDelegate
+
+- (void)calenderDateView:(CCCalenderDateView *)calenderDateView didSwipe:(UISwipeGestureRecognizerDirection)direction {
+    if (direction == UISwipeGestureRecognizerDirectionLeft) {
+        [self nextMonthClick];
+    } else if (direction == UISwipeGestureRecognizerDirectionRight) {
+        [self lastMonthClick];
+    }
 }
 
 

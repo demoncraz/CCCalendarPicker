@@ -18,6 +18,7 @@
 #define CCDefaultSeparatorLineMargin 10
 #define CCDefaultSeparatorLineColor ColorWithRGB(220,220,227,1)
 
+
 @interface CCCalenderDateView ()<UICollectionViewDataSource>
 
 
@@ -30,6 +31,7 @@
 @property (nonatomic, assign) NSInteger rows;
 
 @property (nonatomic, strong) NSMutableArray *separatorLines;
+
 
 @end
 
@@ -169,9 +171,12 @@
         self.layer.shadowOpacity = 1;
         self.layer.shadowRadius = 0;
         self.layer.masksToBounds = NO;
+        
     }
     return self;
 }
+
+
 
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -196,6 +201,8 @@
     
     return cell;
 }
+
+
 
 
 @end

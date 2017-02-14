@@ -62,6 +62,8 @@
         dayString = [dayString substringFromIndex:1];
     }
     self.normalDateLabel.text = dayString;
+    //判断星期几
+    NSInteger weekDay = [CCDateTool getWeedDayFromDate:itemDate];
     
     if ([CCDateTool isToday:itemDate]) {
         self.chineseDateLabel.text = @"今天";
@@ -75,18 +77,17 @@
         self.chineseDateLabel.text = ChineseDays[chineseDay - 1];
         
         self.bgView.backgroundColor = [UIColor clearColor];
-        self.normalDateLabel.textColor = CCDefaultDateTextColor;
-        self.chineseDateLabel.textColor = CCDefaultDateTextColor;
+
+        if (weekDay == 0 || weekDay == 6) {//如果是周末
+            self.normalDateLabel.textColor = CCWeekendTextColor;
+            self.chineseDateLabel.textColor = CCWeekendTextColor;
+        } else {
+            self.normalDateLabel.textColor = CCDefaultDateTextColor;
+            self.chineseDateLabel.textColor = CCDefaultDateTextColor;
+        }
     }
-    //判断星期几
-    NSInteger weekDay = [CCDateTool getWeedDayFromDate:itemDate];
-    if (weekDay == 0 || weekDay == 6) {//如果是周末
-        self.normalDateLabel.textColor = CCWeekendTextColor;
-        self.chineseDateLabel.textColor = CCWeekendTextColor;
-    } else {
-        self.normalDateLabel.textColor = CCDefaultDateTextColor;
-        self.chineseDateLabel.textColor = CCDefaultDateTextColor;
-    }
+    
+    
     
 }
 
