@@ -27,7 +27,7 @@ static NSString * const cellId = @"cell";
 
 static CCCalerderPickerView *sharedCalenderPickView;
 
-@interface CCCalerderPickerView ()<CCCalendarDateViewDelegate>
+@interface CCCalerderPickerView ()
 
 @property (weak, nonatomic) IBOutlet UIButton *monthButton;
 
@@ -88,14 +88,41 @@ static CCCalerderPickerView *sharedCalenderPickView;
 - (void)awakeFromNib {
     
     [super awakeFromNib];
-//    self.clipsToBounds = NO;
-//    self.backgroundColor = [UIColor lightGrayColor];
-    //设置label为当前年月
+
+    //获取当前日期
     CCYearMonth currentYearMonth = {[NSDate date].year, [NSDate date].month};
     self.currentYearMonth = currentYearMonth;
+    //设置UI
     [self setupUI];
-//    [self reloadDateWithYearMonth:self.currentYearMonth];
     
+    //屏幕适配
+    CGRect frame = self.frame;
+    frame.size.width = [UIScreen mainScreen].bounds.size.width;
+    self.frame = frame;
+    
+    //添加手势
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self addGestureRecognizer:swipeLeft];
+    [self addGestureRecognizer:swipeRight];
+    
+}
+
+
+/**
+ 轻扫手势
+
+ @param swipe 轻扫方向
+ */
+- (void)swipe:(UISwipeGestureRecognizer *)swipe {
+    
+    if (swipe.direction == UISwipeGestureRecognizerDirectionLeft) {
+        [self nextMonthClick];
+    } else if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
+        [self lastMonthClick];
+    }
 }
 
 
@@ -123,7 +150,6 @@ static CCCalerderPickerView *sharedCalenderPickView;
     _dateView = [[CCCalenderDateView alloc] initWithFrame:CGRectMake(0, 89, [UIScreen mainScreen].bounds.size.width, 275) collectionViewLayout:layout];
     _dateView.yearMonth = self.currentYearMonth;
     [self addSubview:_dateView];
-    _dateView.swipeDelegate = self;
     
     
 }
@@ -132,9 +158,8 @@ static CCCalerderPickerView *sharedCalenderPickView;
     
     //先从缓存池中取
     CCCalenderDateView *dateView = [self.reusableDateViews lastObject];
-    if (!dateView.swipeDelegate) {
-        dateView.swipeDelegate = self;
-    }
+    
+    
     if (dateView == nil) {//如果没取到，就创建
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width / 7.0, CCCalenderItemHeight);
