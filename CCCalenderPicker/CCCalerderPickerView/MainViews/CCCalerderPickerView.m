@@ -46,6 +46,9 @@ static CCCalerderPickerView *sharedCalenderPickView;
 
 @property (nonatomic, strong) NSArray *dotArr;
 
+@property (nonatomic, assign) UIStatusBarStyle currentStatusBarStyle;
+
+
 @end
 
 @implementation CCCalerderPickerView
@@ -259,6 +262,10 @@ static CCCalerderPickerView *sharedCalenderPickView;
 
 #pragma mark - show
 - (void)show {
+    //先记录一下当前状态栏颜色,
+    self.currentStatusBarStyle = [UIApplication sharedApplication].statusBarStyle;
+    //改变状态栏颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
     
     CGRect frame = self.frame;
     frame.origin.y = -frame.size.height;
@@ -274,6 +281,9 @@ static CCCalerderPickerView *sharedCalenderPickView;
 
 #pragma mark - dismiss
 - (void)dismiss {
+    //恢复状态栏颜色
+    [UIApplication sharedApplication].statusBarStyle = self.currentStatusBarStyle;
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:@"CCCalendarDismissNotification" object:nil];
     
     [UIView animateWithDuration:CCDefaultShowAnomationDuration delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
